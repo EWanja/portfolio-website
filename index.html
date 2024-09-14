@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edith Wanjohi-Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/0f3c516b1f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="logo">Edith Wanja</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Edith Wanja</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+           </div>        
+        </div>
+    </nav>
+    <section id="hero">
+        <div class="section_pic">
+            <img src="./assets/images/EdithW -P1.jpg" alt="profile picture">
+        </div>
+        <div class="section_text">
+            <p class ="section_text_p1">Hello There,</p>
+            <h1 class="title-typed"> I am Edith Wanja</h1>
+            <p class="section_text_p2">[Front End Developer]</p>
+            <div class="btn-container">
+                <button class="btn btn-color" 
+                onclick="window.open('./assets/Edith Wanjohi-Resume.pdf')">My Resume</button>
+                <button class="btn btn-color" 
+                onclick="location.href ='./#contact'">Contact</button>
+            </div>
+            <div id=" socials">
+                <i class="fa-brands fa-github" onclick="location.href ='https://github.com/EWanja'"></i>
+                <i class="fa-brands fa-linkedin" onclick="location.href ='https://ke.linkedin.com/in/wanjohi-wanja'"></i>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <h1 class ="title">About</h1>
+        <div class="section-container">
+            <div class="section_pic2">
+                <img src="assets/images/EdithW -P2.jpg" alt="Profile Picture" class="about-pic">
+            </div>
+            <div class="about-details">
+                <div class="text-container">I'm Edith Wanja, a Front-End Developer with a passion for building user-friendly.
+                  I believe there's always more to learn. I’m constantly expanding my skill set, 
+                  staying updated with the latest trends, and embracing new challenges to grow as a developer.</div>
+                <div class="about-containers">
+                    <div class="detail-container"> 
+                        <h3>Tech Stack</h3> 
+                        <i class="fa-brands fa-html5"></i>
+                        <i class="fa-brands fa-css3"></i>
+                        <i class="fa-brands fa-js"></i>
+                        <i class="fa-brands fa-react"></i>
+                        <i class="fa-brands fa-wordpress"></i>
+
+                    </div>
+                    <div class="detail-container"> 
+                        <h3>Education</h3>
+                        <p>I hold a diploma in Infornation Technology from Jomo Kenyatta University</p>
+                        <button class="btn btn-color" 
+                onclick="window.open('./assets/Edith Wanjohi-Resume.pdf')">My Resume</button>  
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <p class="section_text_p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="projects_detail">
+          <div class="about-containers">
+            <div class="detail-container color-container">
+              <div class="project-img-container">
+                <img
+                  src="./assets/images/Quasi Offices.png"
+                  alt="Quasi Serviced Offices"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="project-title">Quasi Serviced Offices</h2>
+              <p class="project_text_p">A website developed for a serviced office offering coworking spaces, meeting rooms and private offices.</p>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://quasiservicedoffices.co.ke/'"
+                >
+                  Check it Out
+                </button>
+              </div>
+            </div>
+            <div class="detail-container color-container">
+              <div class="project-img-container">
+                <img
+                  src="./assets/images/Julia Mukundi Advocates.png"
+                  alt="Julia Mukundi Advocates"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="project-title">Julia M Advocates</h2>
+              <p class="project_text_p">A dynamic website built for a legal firm that specializes in corporate law and legal consultations.</p>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://juliamukundiadvocates.com/'"
+                >
+                  Check it Out
+                </button>
+              </div>
+            </div>
+            <div class="detail-container color-container">
+                <div class="project-img-container">
+                  <img
+                    src="./assets/images/Erevu Hub.png"
+                    alt="Erevu Innovation Hub"
+                    class="project-img"
+                  />
+                </div>
+                <h2 class="project-title">Erevu Innovation Hub</h2>
+                <p class="project_text_p">A website for forward-thinking technology hub, founded with the vision of empowering underrepresented groups to thrive in the digital age.</p>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://erevuinnovationhub.co.ke/'"
+                  >
+                    Check it Out
+                  </button>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-container">
+            <div class="contact-info">
+                <form id="contact-form" action="" method="post">
+                    <input type="text" id="name" name="full_name" required placeholder="Your name"/>
+                    <input type="email" id="email" name="user-email" required placeholder="Your Email Address"/>
+                    <textarea  id="message" name="msg" required placeholder="Type your message here...."></textarea>
+                    <button type ="submit"id="contact-submit">Submit</button>
+                </form>
+            </div>
+          </div>
+        </section>
+    <footer>
+        <p>Copyright &#169;  Edith Wanjohi. All Rights Reserved.</p>
+      </footer>
+    <script src="script.js"></script>
+</body>
+</html>
